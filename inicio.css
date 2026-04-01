@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f2f6ff;
+}
+
+/* Estilo do topo e logo */
+header {
+    background:#003b8b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+header span {
+    color: #2da2ff;
+    text-shadow: 0 0 5px #ffffff80;
+}
+
+/* Menu */
+nav {
+    background: #0054c7;
+    padding: 12px 0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #2da2ff;
+    color: #001b40;
+    box-shadow: 0 0 6px #fff;
+}
+
+/* Conteúdo */
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+.container h2 {
+    color: #003b8b;
+    font-size: 35px;
+}
+
+.container p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 23px;
+    line-height: 1.6;
+}
+
+footer {
+    background: #003b8b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    margin: 100px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 155px;
+    border: 5px solid #001b40;
+
+}
+
+

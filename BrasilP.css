@@ -1,0 +1,73 @@
+/* ======== ESTILO GERAL ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #7a0000, #1c1c1c, #7a0000); /* Vermelho → vinho → preto */
+    color: #ffffff;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-shadow: 0px 0px 12px #000000aa;
+}
+
+/* ======== CARDS ======== */
+.card {
+    background: rgba(255,255,255,0.10);
+    backdrop-filter: blur(4px);
+    border: 1.5px solid #ffffff40;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 25px auto;
+    max-width: 850px;
+    box-shadow: 0 4px 25px #00000055;
+}
+
+/* ======== IMAGENS ======== */
+.imagem-centro {
+    display: block;
+    margin: 15px auto;
+    width: 60%;
+    max-width: 380px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px #00000077;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ======== BOTÃO ======== */
+nav ul p2 {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-align: center;
+    display: inline-block;
+    margin-left: 47%;
+    background: linear-gradient(90deg, #8b0000, #b40000); /* Tons do GE Brasil */
+    box-shadow: 0 0 10px #00000077;
+}
+
+/* Hover botão */
+nav ul p2:hover {
+    background: linear-gradient(90deg, #ff6666, #ffbbbb);
+    color: #4d0000;
+    box-shadow: 0 0 12px #ffffffcc;
+    transform: scale(1.04);
+}

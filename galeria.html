@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="galeria.css">
+    <title>GALERIA</title>
+
+</head>
+
+<body>
+
+
+
+
+    <h2 style="text-align:center;">GALERIA</h2>
+
+
+    <h3 id="nome-time" style="text-align:center; margin-bottom:8px; font-family:Arial; color:#f3f3f3;">Internacional
+    </h3>
+    <div class="carousel">
+        <!-- INTERNACIONAL -->
+        <div class="slide mostrar"><img src="img/INTER-projeto/Inter.jpeg" alt="INTER"></div>
+        <div class="slide"><img src="img/INTER-projeto/Beira Rio.jpeg" alt="INTER"></div>
+        <div class="slide"><img src="img/INTER-projeto/taça.jpeg" alt="INTER"></div>
+        <div class="slide"><img src="img/INTER-projeto/time.png" alt="INTER"></div>
+    
+
+
+        <!-- GRÊMIO -->
+        <div class="slide"><img src="img/Gremio-projeto/download (6).jpeg" alt="GRÊMIO"></div>
+        <div class="slide"><img src="img/Gremio-projeto/Arena-g.png" alt="GRÊMIO"></div>
+        <div class="slide"><img src="img/Gremio-projeto/taça.png" alt="GRÊMIO"></div>
+        <div class="slide"><img src="img/Gremio-projeto/time-g.png" alt="GRÊMIO"></div>
+        
+
+
+        <!-- JUVENTUDE -->
+        <div class="slide"><img src="img/Juventude-projeto/Juventude.jpeg" alt="JUVENTUDE"></div>
+        <div class="slide"><img src="img/Juventude-projeto/estadio.png" alt="JUVENTUDE"></div>
+        <div class="slide"><img src="img/Juventude-projeto/taça.jpg" alt="JUVENTUDE"></div>
+        <div class="slide"><img src="img/Juventude-projeto/time.png" alt="JUVENTUDE"></div>
+      
+
+
+        <!-- SÃO JOSÉ -->
+        <div class="slide"><img src="img/SãoJose-projeto/sao-jose-rs (1).png" alt="SÃO JOSÉ"></div>
+        <div class="slide"><img src="img/SãoJose-projeto/estadio.png" alt="SÃO JOSÉ"></div>
+        <div class="slide"><img src="img/SãoJose-projeto/taça.png" alt="SÃO JOSÉ"></div>
+        <div class="slide"><img src="img/SãoJose-projeto/time.png" alt="SÃO JOSÉ"></div>
+       
+
+
+        <!-- CAXIAS -->
+        <div class="slide"><img src="img/Caxias-projeto/SOCIEDADE ESPORTIVA E RECREATIVA CAXIAS.jpeg" alt="CAXIAS"></div>
+        <div class="slide"><img src="img/Caxias-projeto/estadio.png" alt="CAXIAS"></div>
+        <div class="slide"><img src="img/Caxias-projeto/taça.png" alt="CAXIAS"></div>
+        <div class="slide"><img src="img/Caxias-projeto/time.png" alt="CAXIAS"></div>
+        
+
+
+        <!-- BRASIL DE PELOTAS -->
+        <div class="slide"><img src="img/Pelotas-projeto/Grêmio Esportivo Brasil - Pelotas-RS.jpeg" alt="BRASIL DE PELOTAS"></div>
+        <div class="slide"><img src="img/Pelotas-projeto/estadio.jpg" alt="BRASIL DE PELOTAS"></div>
+        <div class="slide"><img src="img/Pelotas-projeto/foto.historia.primeirospassos-02 (1).jpg" alt="BRASIL DE PELOTAS"></div>
+        <div class="slide"><img src="img/Pelotas-projeto/elenco atual.jpeg" alt="BRASIL DE PELOTAS"></div>
+       
+
+
+        <button class="btn" id="voltar">◀</button>
+        <button class="btn" id="avancar">▶</button>
+    </div>
+
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const nomeTime = document.getElementById('nome-time');
+        const nomes = [
+            'Internacional', 'Internacional', 'Internacional', 'Internacional',
+            'Grêmio', 'Grêmio', 'Grêmio', 'Grêmio',
+            'Juventude', 'Juventude', 'Juventude', 'Juventude',
+            'São José', 'São José', 'São José', 'São José', 'Caxias', 'Caxias', 'Caxias', 'Caxias', 'Brasil de Pelotas', 'Brasil de Pelotas', 'Brasil de Pelotas', 'Brasil de Pelotas',
+        ];
+        let index = 0;
+
+
+        function mostrarSlide(i) {
+            slides.forEach(s => s.classList.remove('mostrar'));
+            slides[i].classList.add('mostrar');
+            nomeTime.textContent = nomes[i];
+        }
+
+
+        document.getElementById('avancar').onclick = () => {
+            index = (index + 1) % slides.length;
+            mostrarSlide(index);
+        }
+
+
+        document.getElementById('voltar').onclick = () => {
+            index = (index - 1 + slides.length) % slides.length;
+            mostrarSlide(index);
+        }
+    </script>
+
+    <nav><ul><p><a href="inicio.html">Inicio</a></p></ul></nav>
+
+
+</body>
+
+</html>

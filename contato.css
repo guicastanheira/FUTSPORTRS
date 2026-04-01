@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+}
+
+header {
+    background: #0152c2;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Caixas uma embaixo da outra */
+.form-contato,
+.info-contato {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2da2ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2da2ff;
+}
+
+nav ul p {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-align: center;
+    display: inline-block;
+    margin-left: 47%;
+  }
+  
+  nav ul p:hover {
+    background: #2da2ff;
+    color: #001b40;
+    box-shadow: 0 0 6px #fff;
+  }
+
+footer {
+    background: #0152c2;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

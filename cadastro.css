@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4A90E2, #0054c7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    width: 350px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  
+  label {
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.2s;
+  }
+  
+  input:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 4px rgba(74,144,226,0.4);
+  }
+  
+  
+  button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #357ABD;
+  }
+  
+  
+  .link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .link a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .link a:hover {
+    text-decoration: underline;
+  }
+  
+ 
+  .login-page {
+    background: linear-gradient(135deg, #0054c7, #2575fc);
+  }
+  
+  .cadastro-page {
+    background: linear-gradient(135deg, #0054c7, #185a9d);
+  }
+
+  nav ul p2 {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-align: center;
+    display: inline-block;
+    margin-left: 46.7px;
+    background: linear-gradient(90deg, #2d6ff3, #054fee);
+    box-shadow: 0 0 10px #00000077;
+}
+
+/* Hover botão */
+nav ul p2:hover {
+    background: linear-gradient(90deg, #63b8ff, #bfe5ff);
+    color: #002244;
+    box-shadow: 0 0 12px #ffffffcc;
+    transform: scale(1.04);
+  }
